@@ -77,4 +77,5 @@ while (choice != 5)
             Console.WriteLine("Invalid choice. Please try again.");
             break;
     }
+    Console.WriteLine($"Total entries: {myJournal.GetEntryCount()}");
 }

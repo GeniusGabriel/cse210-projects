@@ -1,4 +1,4 @@
-
+// SHOWING CREATIVITY: I added a method called GetEntryCount() to the Journal class. This method returns the number of entries currently stored in the journal. It can be useful for displaying the total number of entries to the user or for other purposes where knowing the count of entries is necessary.
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,6 +18,10 @@ public class Journal
         {
             entry.DisplayEntry();
         }
+    }
+    public int GetEntryCount()
+    {
+        return _entries.Count;
     }
 
     public void SaveToFile(string filename)
